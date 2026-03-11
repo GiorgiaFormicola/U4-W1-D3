@@ -20,7 +20,7 @@ public class Rectangle {
         System.out.println("perimeter = " + rectangle.calculatePerimeter() + " cm");
     }
 
-    public static void printTwoRectangle(Rectangle rectangle1, Rectangle rectangle2) {
+    public static void printTwoRectangles(Rectangle rectangle1, Rectangle rectangle2) {
         System.out.println("--- RECTANGLE 1 ---");
         printRectangle(rectangle1);
         System.out.println("--- RECTANGLE 2 ---");
@@ -45,7 +45,7 @@ public class Rectangle {
 
     // NOT-STATICS METHODS LIST
     private double calculatePerimeter() {
-        return new BigDecimal(Double.toString((height + this.width) * 2)).setScale(2, RoundingMode.HALF_UP).doubleValue();
+        return new BigDecimal(Double.toString((this.height + this.width) * 2)).setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
 
     private double calculateArea() {

@@ -17,6 +17,7 @@ public class Customer {
         this.nameAndSurname = name + " " + surname;
         this.email = email;
         this.registeredAt = LocalDateTime.now();
+        Cart cart = new Cart(this.code);
         customersCount++;
     }
 
@@ -25,9 +26,10 @@ public class Customer {
         System.out.println(toString());
     }
 
+    //METHODS LIST
     @Override
     public String toString() {
-        return "Customer {" +
+        return "Customer" + code + " {" +
                 " \n code = " + code +
                 ", \n name = " + nameAndSurname +
                 ", \n email = " + email +

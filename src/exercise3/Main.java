@@ -9,6 +9,6 @@ public class Main {
         Product.getInfo();
 
         Customer customer1 = new Customer("Mario", "Rossi", "mariorossi@gmail.com");
-        customer1.getInfo();
+
     }
 }
